@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Msys Vistorias – Plano Sob Demanda</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #2c3e50;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 40px 15px;
+}
+
+.header img {
+    height: 48px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.header-text p {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #7f8c8d;
+    letter-spacing: 2px;
+}
+
+/* MENSALIDADE */
+.monthly {
+    padding: 15px 40px 30px;
+    font-size: 17px;
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* TABLE */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-size: 15px;
+    padding: 0 20px 20px;
+}
+
+.table thead th {
+    background: #4fb37a;
+    color: #ffffff;
+    padding: 22px 14px;          /* aumenta altura */
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    border-radius: 14px 14px 0 0; /* topo arredondado, base reta */
+    border-bottom: 4px solid #ffffff; /* cria separação visual */
+}
+
+/* Última coluna (IA) com destaque */
+.table thead th.ia-header {
+    background: #1e8449;
+    font-size: 17px;
+}
+
+.table thead th:last-child {
+    background: #1e8449;
+}
+
+.table tbody tr {
+    background: #f4fbf7;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #e9f6ef;
+}
+
+.table td {
+    padding: 16px;
+    text-align: center;
+    color: #555;
+}
+
+.value {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.value-ia {
+    font-weight: bold;
+    color: #1e8449;
+    font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.value-ia {
+    font-weight: bold;
+    color: #1e8449;
+    font-size: 17px;
+    background: #e6f6ee;
+    border-radius: 8px;
+    padding: 6px 10px;
+    display: inline-block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="header">
+        <img src="logo-msys-vistorias.png" alt="Msys Vistorias">
+        <div class="header-text">
+            <h1>PLANOS</h1>
+            <p>FATURAMENTO SOB DEMANDA</p>
+        </div>
+    </div>
+
+    <div class="monthly">
+        Mensalidade fixa: R$ 39,90 • Usuários, dispositivos e fotos ilimitados
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Vistorias</th>
+                <th>Usuários</th>
+                <th>Dispositivos</th>
+                <th>Fotos</th>
+                <th>Valor por vistoria</th>
+                <th class="ia-header">🤖 Valor com IA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Até 10 vistorias</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td class="value">R$ 11,00</td>
+                <td class="value-ia">R$ 13,00</td>
+            </tr>
+            <tr>
+                <td>De 11 a 15 vistorias</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td class="value">R$ 10,00</td>
+                <td class="value-ia">R$ 12,00</td>
+            </tr>
+            <tr>
+                <td>De 16 a 20 vistorias</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td class="value">R$ 9,00</td>
+                <td class="value-ia">R$ 11,00</td>
+            </tr>
+            <tr>
+                <td>De 21 a 50 vistorias</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td class="value">R$ 8,00</td>
+                <td class="value-ia">R$ 10,00</td>
+            </tr>
+            <tr>
+                <td>De 51 a 100 vistorias</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td class="value">R$ 7,00</td>
+                <td class="value-ia">R$ 9,00</td>
+            </tr>
+            <tr>
+                <td>Acima de 100 vistorias</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td>Ilimitados</td>
+                <td class="value">R$ 6,00</td>
+                <td class="value-ia">R$ 8,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        * Valores com IA consideram acréscimo médio de 20% por vistoria.<br>
+        * Vídeos são cobrados separadamente.<br><br>
+        © Mold Systems • Msys Vistorias
+    </div>
+
+</div>
+
+</body>
+</html>
