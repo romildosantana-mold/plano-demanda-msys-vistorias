@@ -119,33 +119,26 @@ body {
 }
 
 .value-ia {
-    font-weight: bold;
-    color: #1e8449;
-    font-size: 17px;
-    background: #e6f6ee;
-    border-radius: 8px;
-    padding: 6px 10px;
-    display: inline-block;
-}
-.value-ia {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    white-space: nowrap;
 }
 
 .ia-price {
-    display: inline-block;
     font-weight: bold;
-    font-size: 17px;
     color: #1e8449;
     background: #e6f6ee;
     border-radius: 10px;
-    padding: 6px 12px;
-    margin-bottom: 6px;
+    padding: 6px 10px;
+    font-size: 16px;
 }
 
-.ia-details {
-    font-size: 12px;
-    line-height: 1.3;
-    color: #6c7a74;
+.ia-info::before {
+    content: "•";
+    margin: 0 4px;
+    color: #a3cbb3;
 }
 
     
@@ -202,12 +195,9 @@ body {
                 <td>Ilimitados</td>
                 <td class="value">R$ 10,00</td>
                 <td class="value-ia">
-                   <div class="ia-price">R$ 12,00</div>
-                       <div class="ia-details">
-                       30 consultas inclusas<br>
-                       Excedente: R$ 0,20 / consulta
-                 </div>
-                </td>                
+                  <span class="ia-price">R$ 12,00</span>
+                  <span class="ia-info">30 consultas • Excedente R$ 0,20</span>
+                </td>               
             </tr>
             <tr>
                 <td>De 16 a 20 vistorias</td>
@@ -216,12 +206,9 @@ body {
                 <td>Ilimitados</td>
                 <td class="value">R$ 9,00</td>
                 <td class="value-ia">
-                   <div class="ia-price">R$ 11,00</div>
-                       <div class="ia-details">
-                       30 consultas inclusas<br>
-                       Excedente: R$ 0,20 / consulta
-                 </div>
-               </td>                
+                  <span class="ia-price">R$ 11,00</span>
+                  <span class="ia-info">30 consultas • Excedente R$ 0,20</span>
+                </td>                
             </tr>
             <tr>
                 <td>De 21 a 50 vistorias</td>
@@ -230,12 +217,9 @@ body {
                 <td>Ilimitados</td>
                 <td class="value">R$ 8,00</td>
                 <td class="value-ia">
-                   <div class="ia-price">R$ 10,00</div>
-                       <div class="ia-details">
-                       30 consultas inclusas<br>
-                       Excedente: R$ 0,20 / consulta
-                 </div>
-               </td>                
+                  <span class="ia-price">R$ 10,00</span>
+                  <span class="ia-info">30 consultas • Excedente R$ 0,20</span>
+                </td>                 
             </tr>
             <tr>
                 <td>De 51 a 100 vistorias</td>
@@ -243,7 +227,10 @@ body {
                 <td>Ilimitados</td>
                 <td>Ilimitados</td>
                 <td class="value">R$ 7,00</td>
-                <td class="value-ia">R$ 9,00</td>
+                <td class="value-ia">
+                  <span class="ia-price">R$ 9,00</span>
+                  <span class="ia-info">30 consultas • Excedente R$ 0,20</span>
+                </td>  
             </tr>
             <tr>
                 <td>Acima de 100 vistorias</td>
@@ -251,13 +238,10 @@ body {
                 <td>Ilimitados</td>
                 <td>Ilimitados</td>
                 <td class="value">R$ 6,00</td>
-               <td class="value-ia">
-                   <div class="ia-price">R$ 8,00</div>
-                       <div class="ia-details">
-                       30 consultas inclusas<br>
-                       Excedente: R$ 0,20 / consulta
-                 </div>
-               </td>                
+                <td class="value-ia">
+                  <span class="ia-price">R$ 8,00</span>
+                  <span class="ia-info">30 consultas • Excedente R$ 0,20</span>
+                </td>              
             </tr>
         </tbody>
     </table>
@@ -272,4 +256,5 @@ body {
 
 </body>
 </html>
+
 
